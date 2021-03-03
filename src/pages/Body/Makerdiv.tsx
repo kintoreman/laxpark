@@ -1,6 +1,5 @@
 import {FC, useState} from "react";
 import { makeStyles } from "@material-ui/core";
-import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import EmojiTransportationIcon from '@material-ui/icons/EmojiTransportation';
 import Card from '@material-ui/core/Card';
@@ -25,19 +24,14 @@ const useStyles = makeStyles({
         justifyContent: "center",
         alignItems: "flex-end",
     },
-    paper: {
-      height: "50vh",
-      width: "20vw",
-      marginLeft: "1em",
-    },
     card: {
         height: "100%",
         width: "20vw",
         marginLeft: "1em",
     },
     img: {
-        width:"200%",
-        height: 140,
+        width:"100%",
+        height: "50%",
     },
     button: {
         padding: "2em",
@@ -57,49 +51,49 @@ const Makerdiv:FC = ()=>{
                     <div className={classes.div2}>
                         
                                        <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./maker" >{/*CardActionAreaはonclick的な役割*/ }
+                                            <CardActionArea style={{height: "100%"}}　 href="./stringking" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/stringking-86853703.jpg"
+                                                image="/images/stringking.jpg"
                                               />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
                                                   STRINGKING
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  大人気だよん
+                                                  男性と女性のラクロスオンラインのための最高のラクロスギアを買い物をさせるStringKing!
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
                                         </Card>
                                         <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./maker" >{/*CardActionAreaはonclick的な役割*/ }
+                                            <CardActionArea style={{height: "100%"}}　 href="./warrior" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
-                                                image=""
+                                                image="/images/Warrior.jpg"
                                               />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
                                                   WARRIOR
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  大人気だよん
+                                                 革新的で高性能な道具。あらゆる年齢、人々に合うラクロスとホッケー選手のためのアパレルの業界最高のメーカー
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
                                         </Card>
                                          <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./maker" >{/*CardActionAreaはonclick的な役割*/ }
+                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
-                                                image=""
+                                                image="/images/eastcoast.jpg"
                                               />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
                                                   EASTCOASTDYES
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  大人気だよん
+                                                  会社のモットーは「ハードワークは報われる」である。成功はハードワークなしでは来ないという考え方です。
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
@@ -109,9 +103,10 @@ const Makerdiv:FC = ()=>{
                     </div>
                         <div className={classes.button}>
                                 <Button variant="contained" 
+                                        href="./maker"
                                         style={{backgroundColor: "gold", color: "#594512", width: "30vw", fontWeight: "bold" }}
                                         >
-                                    すべての道具をみる
+                                    すべてのメーカーをみる
                                 </Button>
                         </div>
             </div>

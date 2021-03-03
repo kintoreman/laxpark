@@ -5,6 +5,9 @@ import Maker from "./pages/Maker";
 import Stick from "./pages/Stick";
 import Head from "./pages/Head";
 import Protect from "./pages/Protect";
+import Eastcoast from "./pages/Body/Maker/Eastcoast";
+import Warrior from "./pages/Body/Maker/Warrior";
+import Stringking from "./pages/Body/Maker/Stringking";
 
 const App:FC= () => {
     return(
@@ -16,6 +19,10 @@ const App:FC= () => {
                 <Route exact path="/stick" component={Stick}/>
                 <Route exact path="/head" component={Head}/>
                 <Route exact path="/protect" component={Protect}/>
+                <Route exact path="/eastcoast" component={Eastcoast}/>
+                <Route exact path="/warrior" component={Warrior}/>
+                <Route exact path="/stringking" component={Stringking}/>
+
             </Switch>
         </BrowserRouter>
         </> 
