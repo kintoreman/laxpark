@@ -1,6 +1,6 @@
 import {FC, useState} from "react";
 import { makeStyles } from "@material-ui/core";
-import EmojiTransportationIcon from '@material-ui/icons/EmojiTransportation';
+import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
@@ -11,7 +11,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
     div: {
         background :"#f9f5ec",
-        height: "1000px",
+        height: "1500px",
         width: "100%",
         paddingTop: "4%",
         paddingLeft: "8%",
@@ -34,7 +34,7 @@ const useStyles = makeStyles({
       width: "0.3em",
       borderRadius: "15px",
       paddingLeft: "0.8rem",
-      background: "linear-gradient(135deg, #ffd600 0%, #ffa800 100%)",
+      
     },
     card: {
         height: "100%",
@@ -58,27 +58,27 @@ const useStyles = makeStyles({
 });
 
 
-const Maker:FC = ()=>{
+const College:FC = ()=>{
     const classes = useStyles();
 
     return(
     <>    
         <div className={classes.div}>
-            <h1 className={classes.h1} ><EmojiTransportationIcon />メーカー一覧</h1>
+            <h1 className={classes.h1} ><EmojiPeopleIcon />関東大学一覧</h1>
                     <div className={classes.div2}>
                         
                                        <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./stringking" >{/*CardActionAreaはonclick的な役割*/ }
+                                            <CardActionArea style={{height: "100%"}}　 href="./waseda" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/stringking.jpg"
+                                                image=""
                                               />
                                               <CardContent>
                                                 <Typography className={classes.h2} gutterBottom variant="h5" component="h2">
-                                                    STRINGKING
+                                                    Waseda 
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  男性と女性のラクロスオンラインのための最高のラクロスギアを買い物をさせるStringKing!
+                                                 Red buts
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
@@ -87,14 +87,14 @@ const Maker:FC = ()=>{
                                             <CardActionArea style={{height: "100%"}}　 href="./warrior" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/Warrior.jpg"
+                                                image=""
                                               />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  WARRIOR
+                                                  KO
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                 革新的で高性能な道具。あらゆる年齢、人々に合うラクロスとホッケー選手のためのアパレルの業界最高のメーカー
+                                                 日吉いいな
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
@@ -104,14 +104,14 @@ const Maker:FC = ()=>{
                                             <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/eastcoast.jpg"
+                                                image=""
                                               />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  EASTCOASTDYES
+                                                  DOKKYO
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  会社のモットーは「ハードワークは報われる」である。成功はハードワークなしでは来ないという考え方です。
+                                                  成功はハードワークなしでは来ないという考え方です。
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
@@ -122,14 +122,14 @@ const Maker:FC = ()=>{
                                             <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/eastcoast.jpg"
+                                                image=""
                                                 />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  ~~~~~~
+                                                  CHUO
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  会社のモットーは「ハードワークは報われる」である。成功はハードワークなしでは来ないという考え方です。
+                                                  Banditsu
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
@@ -138,14 +138,14 @@ const Maker:FC = ()=>{
                                             <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/eastcoast.jpg"
+                                                image=""
                                                 />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  ~~~~~~~~
+                                                  TOKYO
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  会社のモットーは「ハードワークは報われる」である。成功はハードワークなしでは来ないという考え方です。
+                                                  nihon1
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
@@ -154,14 +154,14 @@ const Maker:FC = ()=>{
                                             <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/eastcoast.jpg"
+                                                image=""
                                                 />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  ~~~~~~~~
+                                                  RIKKYO
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  会社のモットーは「ハードワークは報われる」である。成功はハードワークなしでは来ないという考え方です。
+                                                  Setten
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
@@ -173,14 +173,14 @@ const Maker:FC = ()=>{
                                             <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/eastcoast.jpg"
+                                                image=""
                                                 />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  ~~~~~~
+                                                  MUSASHI
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  会社のモットーは「ハードワークは報われる」である。成功はハードワークなしでは来ないという考え方です。
+                                                 Family
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
@@ -189,14 +189,14 @@ const Maker:FC = ()=>{
                                             <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/eastcoast.jpg"
+                                                image=""
                                                 />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  ~~~~~~~~
+                                                  MEIJI
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  会社のモットーは「ハードワークは報われる」である。成功はハードワークなしでは来ないという考え方です。
+                                                  chocolate
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
@@ -205,14 +205,62 @@ const Maker:FC = ()=>{
                                             <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/eastcoast.jpg"
+                                                image=""
                                                 />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  ~~~~~~~~
+                                                  HITOTSUBASHI
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  会社のモットーは「ハードワークは報われる」である。成功はハードワークなしでは来ないという考え方です。
+                                                  We are daijya
+                                                </Typography>
+                                              </CardContent>
+                                            </CardActionArea> 
+                                        </Card>
+                                        <Card className={classes.card}>
+                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
+                                              <CardMedia
+                                                className={classes.img}
+                                                image=""
+                                                />
+                                              <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">
+                                                  GAKUSHUIN
+                                                </Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                  fenics
+                                                </Typography>
+                                              </CardContent>
+                                            </CardActionArea> 
+                                        </Card>
+                                        <Card className={classes.card}>
+                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
+                                              <CardMedia
+                                                className={classes.img}
+                                                image=""
+                                                />
+                                              <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">
+                                                  MEIJIGAKUIN
+                                                </Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                  Hepbands
+                                                </Typography>
+                                              </CardContent>
+                                            </CardActionArea> 
+                                        </Card>
+                                        <Card className={classes.card}>
+                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
+                                              <CardMedia
+                                                className={classes.img}
+                                                image=""
+                                                />
+                                              <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">
+                                                  NITTAI
+                                                </Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                  All Blue
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
@@ -226,4 +274,4 @@ const Maker:FC = ()=>{
 
 }
 
-export default Maker;
+export default College;

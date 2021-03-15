@@ -1,12 +1,13 @@
 import { makeStyles } from "@material-ui/core";
 import {FC} from "react";
+import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import Button from '@material-ui/core/Button';
-import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+
 
 const useStyles = makeStyles({
     div: {
@@ -18,6 +19,7 @@ const useStyles = makeStyles({
         paddingLeft: "10em",
         color: "#594512",
     },
+
     div2: {
         height: "50vh",
         display: "flex",
@@ -41,72 +43,72 @@ const useStyles = makeStyles({
 });
 
 
-const Protectdiv:FC = ()=>{
+const Populardiv:FC = ()=>{
     const classes = useStyles();
 
     return(
         <div className={classes.div}>
-            <h1 className={classes.h1} ><LocalHospitalIcon />防具一覧</h1>
+            <h1 className={classes.h1} ><EmojiPeopleIcon />有名人一覧</h1>
                     <div className={classes.div2}>
-                       <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./globe" >{/*CardActionAreaはonclick的な役割*/ }
+                        <Card className={classes.card}>
+                                            <CardActionArea style={{height: "100%"}}　 href="./ganchn" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
                                                 image=""
                                               />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  グローブ
+                                                  がんちゃん
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  男性と女性のラクロスオンラインのための最高のラクロスギアを買い物をさせるStringKing!
+                                                  いけめん
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
                                         </Card>
                                         <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./" >{/*CardActionAreaはonclick的な役割*/ }
+                                            <CardActionArea style={{height: "100%"}}　 href="./sawada" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
                                                 image=""
                                               />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  エルボー
+                                                  さわださん
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                 革新的で高性能な道具。あらゆる年齢、人々に合うラクロスとホッケー選手のためのアパレルの業界最高のメーカー
+                                                 さっかーおじさん
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
                                         </Card>
                                          <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./chest" >{/*CardActionAreaはonclick的な役割*/ }
+                                            <CardActionArea style={{height: "100%"}}　 href="./yuip" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
                                                 image=""
                                               />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  チェスト
+                                                  ゆいP
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  会社のモットーは「ハードワークは報われる」である。成功はハードワークなしでは来ないという考え方です。
+                                               　　でかい女芸人
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
                                         </Card>
                     </div>
                         <div className={classes.button}>
-                                <Button variant="contained"
-                                        href="./protect" 
+                                <Button variant="contained" 
+                                        href="./popular"
                                         style={{backgroundColor: "gold", color: "#594512", width: "30vw", fontWeight: "bold" }}
                                         >
-                                    すべての防具をみる
+                                    すべての有名人をみる
                                 </Button>
                     </div>
         </div>
     )
 }
 
-export default Protectdiv;
+export default Populardiv;

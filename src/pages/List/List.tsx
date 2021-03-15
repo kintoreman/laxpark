@@ -8,13 +8,16 @@ import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 
 const useStyles = makeStyles({
     ul:{
-        width: "80vw",
+        position: "fixed",
+        background: "#fff",
+        zIndex: 1,
+        width: "100%",
         height: "7vh",
         display: "flex",
         alignItems: "center",
         fontWeight: "bold",
         textShadow: "1px 1px 2px silver",
-        margin: "0 ",
+        paddingRight: "10%",
     },
     p: {
         marginRight: "auto",
@@ -38,9 +41,9 @@ const List:FC = ()=>{
             <ul className={classes.ul}>
                 <p className={classes.p}><a href="./" ><SupervisedUserCircleIcon style={{color:"gold"}} />Lacrosse Park</a></p>
                 <li className={classes.list}><a href="./maker" ><EmojiTransportationIcon /> メーカー一覧 </a></li>
-                <li className={classes.list}><a href="./stick" ><AccessibilityIcon />シャフト一覧</a></li>
-                <li className={classes.list}><a href="./head" ><EmojiPeopleIcon />ヘッド一覧</a></li>
-                <li className={classes.list}><a href="./protect" ><LocalHospitalIcon />防具一覧</a></li>
+                <li className={classes.list}><a href="./college" ><AccessibilityIcon />関東大学一覧</a></li>
+                <li className={classes.list}><a href="./popular" ><EmojiPeopleIcon />有名人一覧</a></li>
+                <li className={classes.list} style={{marginRight: "10%"}}><a href="./country" ><LocalHospitalIcon />主要国一覧</a></li>
             </ul>
 
             

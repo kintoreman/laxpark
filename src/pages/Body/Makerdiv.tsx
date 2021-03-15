@@ -8,6 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
+
 const useStyles = makeStyles({
     div: {
         background :"#f9f5ec",
@@ -23,6 +24,12 @@ const useStyles = makeStyles({
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-end",
+    },
+    h2: {
+      width: "0.3em",
+      borderRadius: "15px",
+      paddingLeft: "0.8rem",
+      background: "linear-gradient(135deg, #ffd600 0%, #ffa800 100%)",
     },
     card: {
         height: "100%",
@@ -47,7 +54,7 @@ const Makerdiv:FC = ()=>{
     return(
     <>    
         <div className={classes.div}>
-            <h1 className={classes.h1} ><EmojiTransportationIcon />人気メーカー一覧</h1>
+            <h1 className={classes.h1} ><EmojiTransportationIcon />メーカー一覧</h1>
                     <div className={classes.div2}>
                         
                                        <Card className={classes.card}>
@@ -57,8 +64,8 @@ const Makerdiv:FC = ()=>{
                                                 image="/images/stringking.jpg"
                                               />
                                               <CardContent>
-                                                <Typography gutterBottom variant="h5" component="h2">
-                                                  STRINGKING
+                                                <Typography className={classes.h2} gutterBottom variant="h5" component="h2">
+                                                    STRINGKING
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
                                                   男性と女性のラクロスオンラインのための最高のラクロスギアを買い物をさせるStringKing!

@@ -41,57 +41,60 @@ const useStyles = makeStyles({
 });
 
 
-const Shortdiv:FC = ()=>{
+const Collegediv:FC = ()=>{
     const classes = useStyles();
 
     return(
         <div className={classes.div}>
-            <h1 className={classes.h1} ><AccessibilityIcon />シャフト一覧</h1>
+            <h1 className={classes.h1} ><AccessibilityIcon />関東大学一覧</h1>
                     <div className={classes.div2}>
                         <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./short" >{/*CardActionAreaはonclick的な役割*/ }
+                                            <CardActionArea style={{height: "100%"}}　 href="./1bu" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
-                                                image=""
+                                                image="/images/tatikawa.jpg"
                                               />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  ショート
+                                                 関東一部リーグ
                                                 </Typography>
-                                                <Typography variant="body2" color="textSecondary" component="p">
-                                                  男性と女性のラクロスオンラインのための最高のラクロスギアを買い物をさせるStringKing!
+                                                <Typography style={{fontSize: "0.8em"}} variant="inherit" color="textSecondary" >
+                                                  <p>男子１２チーム</p>      
+                                                  <p>女子１２チーム</p>
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
                                         </Card>
                                         <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./long" >{/*CardActionAreaはonclick的な役割*/ }
+                                            <CardActionArea style={{height: "100%"}}　 href="./2bu" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
                                                 image=""
                                               />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  ロング
+                                                  関東二部リーグ
                                                 </Typography>
-                                                <Typography variant="body2" color="textSecondary" component="p">
-                                                 革新的で高性能な道具。あらゆる年齢、人々に合うラクロスとホッケー選手のためのアパレルの業界最高のメーカー
+                                                <Typography style={{fontSize: "0.8em"}} variant="inherit" color="textSecondary" >
+                                                  <p>男子１２チーム</p>      
+                                                  <p>女子１２チーム</p>
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
                                         </Card>
                                          <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./goalie" >{/*CardActionAreaはonclick的な役割*/ }
+                                            <CardActionArea style={{height: "100%"}}　 href="./3bu" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
                                                 image=""
                                               />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  ゴーリー
+                                                  関東三部リーグ
                                                 </Typography>
-                                                <Typography variant="body2" color="textSecondary" component="p">
-                                                  会社のモットーは「ハードワークは報われる」である。成功はハードワークなしでは来ないという考え方です。
+                                                <Typography style={{fontSize: "0.8em"}} variant="inherit" color="textSecondary" >
+                                                  <p>男子１５チーム</p>      
+                                                  <p>女子１９チーム</p>
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
@@ -99,10 +102,10 @@ const Shortdiv:FC = ()=>{
                     </div>
                         <div className={classes.button}>
                                 <Button variant="contained" 
-                                        href="stick"
+                                        href="./college"
                                         style={{backgroundColor: "gold", color: "#594512", width: "30vw", fontWeight: "bold" }}
                                         >
-                                    すべてのシャフトをみる
+                                    すべての大学をみる
                                 </Button>
                     </div>
 
@@ -110,4 +113,4 @@ const Shortdiv:FC = ()=>{
     )
 }
 
-export default Shortdiv;
+export default Collegediv;

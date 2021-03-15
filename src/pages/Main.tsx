@@ -2,9 +2,9 @@ import {FC, useState} from "react";
 import List from "./List/List";
 import Searchdiv from "./Body/Searchdiv";
 import Makerdiv from "./Body/Makerdiv";
-import Stickdiv from "./Body/Stickdiv";
-import Protectdiv from "./Body/Protectdiv";
-import Headdiv from "./Body/Headdiv";
+import Collegediv from "./Body/Collegediv";
+import Countrydiv from "./Body/Countrydiv";
+import Populardiv from "./Body/Populardiv";
 import Footer from "./List/footer"
 
 export type Todo = {
@@ -19,12 +19,11 @@ const Main:FC = ()=>{
 
     return(
         <>
-        <List />      
         <Searchdiv addText={addText} />
         <Makerdiv />
-        <Stickdiv />
-        <Headdiv />
-        <Protectdiv />
+        <Collegediv />
+        <Populardiv />
+        <Countrydiv />
         <Footer />
         </>
     )

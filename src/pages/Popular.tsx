@@ -1,6 +1,6 @@
 import {FC, useState} from "react";
 import { makeStyles } from "@material-ui/core";
-import EmojiTransportationIcon from '@material-ui/icons/EmojiTransportation';
+import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
@@ -58,13 +58,13 @@ const useStyles = makeStyles({
 });
 
 
-const Maker:FC = ()=>{
+const Popular:FC = ()=>{
     const classes = useStyles();
 
     return(
     <>    
         <div className={classes.div}>
-            <h1 className={classes.h1} ><EmojiTransportationIcon />メーカー一覧</h1>
+            <h1 className={classes.h1} ><EmojiPeopleIcon />有名人一覧</h1>
                     <div className={classes.div2}>
                         
                                        <Card className={classes.card}>
@@ -226,4 +226,4 @@ const Maker:FC = ()=>{
 
 }
 
-export default Maker;
+export default　Popular;
