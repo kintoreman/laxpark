@@ -41,7 +41,7 @@ const List:FC = ()=>{
             <ul className={classes.ul}>
                 <p className={classes.p}><a href="./" ><SupervisedUserCircleIcon style={{color:"gold"}} />Lacrosse Park</a></p>
                 <li className={classes.list}><a href="./maker" ><EmojiTransportationIcon /> メーカー一覧 </a></li>
-                <li className={classes.list}><a href="./college" ><AccessibilityIcon />関東大学一覧</a></li>
+                <li className={classes.list}><a href="./college" ><AccessibilityIcon />関東学生ラクロス</a></li>
                 <li className={classes.list}><a href="./popular" ><EmojiPeopleIcon />有名人一覧</a></li>
                 <li className={classes.list} style={{marginRight: "10%"}}><a href="./country" ><LocalHospitalIcon />主要国一覧</a></li>
             </ul>

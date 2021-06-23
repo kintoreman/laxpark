@@ -33,8 +33,6 @@ const useStyles = makeStyles({
     h2: {
       width: "0.3em",
       borderRadius: "15px",
-      paddingLeft: "0.8rem",
-      background: "linear-gradient(135deg, #ffd600 0%, #ffa800 100%)",
     },
     card: {
         height: "100%",
@@ -111,108 +109,105 @@ const Maker:FC = ()=>{
                                                   EASTCOASTDYES
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  会社のモットーは「ハードワークは報われる」である。成功はハードワークなしでは来ないという考え方です。
+                                                  ECDラクロスは双子の兄弟、マイクとグレッグ・ケネリーがラクロスメッシュ市場に進出。2011年に結成された。
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
                                         </Card>
                            
-
                                          <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
+                                            <CardActionArea style={{height: "100%"}}　 href="./nike" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/eastcoast.jpg"
+                                                image="/images/nike.jpg"
                                                 />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  ~~~~~~
+                                                  NIKE
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  会社のモットーは「ハードワークは報われる」である。成功はハードワークなしでは来ないという考え方です。
+                                                  ナイキは、アメリカ合衆国オレゴン州に本社を置く、スニーカーやスポーツウェアなどスポーツ関連商品を扱う多国籍企業。
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
                                         </Card>
                                          <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
+                                            <CardActionArea style={{height: "100%"}}　 href="./brine" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/eastcoast.jpg"
+                                                image="/images/brine.jpg"
                                                 />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  ~~~~~~~~
+                                                  BRINE
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  会社のモットーは「ハードワークは報われる」である。成功はハードワークなしでは来ないという考え方です。
+                                                  1922年に設立された元のW.H.ブライン社の後継者であるブラインは、大衆のために耐久性のある強力なスティックを作成するパイオニアでした。
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
                                         </Card>
                                          <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
+                                            <CardActionArea style={{height: "100%"}}　 href="./stx" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/eastcoast.jpg"
+                                                image="/images/stx.jpg"
                                                 />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  ~~~~~~~~
+                                                  STX
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  会社のモットーは「ハードワークは報われる」である。成功はハードワークなしでは来ないという考え方です。
+                                                  ‎STXは、メリーランド州ボルチモアに拠点を置く世界的なスポーツ用品メーカーです。
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
                                         </Card>
-                                   
-                              
-
+                                                                 
                                          <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
+                                            <CardActionArea style={{height: "100%"}}　 href="./maverik" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/eastcoast.jpg"
+                                                image="/images/maverik.jpg"
                                                 />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  ~~~~~~
+                                                  MAVERIK
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  会社のモットーは「ハードワークは報われる」である。成功はハードワークなしでは来ないという考え方です。
-                                                </Typography>
-                                              </CardContent>
-                                            </CardActionArea> 
-                                        </Card>
-                                         <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
-                                              <CardMedia
-                                                className={classes.img}
-                                                image="/images/eastcoast.jpg"
-                                                />
-                                              <CardContent>
-                                                <Typography gutterBottom variant="h5" component="h2">
-                                                  ~~~~~~~~
-                                                </Typography>
-                                                <Typography variant="body2" color="textSecondary" component="p">
-                                                  会社のモットーは「ハードワークは報われる」である。成功はハードワークなしでは来ないという考え方です。
+                                                  Maverik Lacrosseは、ニューヨーク市に拠点を置くラクロス機器とアパレルのメーカーです.
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 
                                         </Card>
                                          <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
+                                            <CardActionArea style={{height: "100%"}}　 href="./epoch" >{/*CardActionAreaはonclick的な役割*/ }
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/eastcoast.jpg"
+                                                image="/images/epoch.jpg"
                                                 />
                                               <CardContent>
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                  ~~~~~~~~
+                                                  EPOCK
                                                 </Typography>
                                                 <Typography variant="body2" color="textSecondary" component="p">
-                                                  会社のモットーは「ハードワークは報われる」である。成功はハードワークなしでは来ないという考え方です。
+                                                  エポックは、性能を最大化するように設計された最高級の製造されたラクロスの道具を提供します。
+                                                </Typography>
+                                              </CardContent>
+                                            </CardActionArea> 
+                                        </Card>
+                                         <Card className={classes.card}>
+                                            <CardActionArea style={{height: "100%"}}　 href="./true" >{/*CardActionAreaはonclick的な役割*/ }
+                                              <CardMedia
+                                                className={classes.img}
+                                                image="/images/true.jpg"
+                                                />
+                                              <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">
+                                                  TRUE
+                                                </Typography>
+                                                <Typography variant="body2" color="textSecondary" component="p">
+                                                  100年以上にわたり、私たちはパフォーマンスを向上させるスポーツ製品を革新してきました。
                                                 </Typography>
                                               </CardContent>
                                             </CardActionArea> 

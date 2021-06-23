@@ -29,7 +29,7 @@ const useStyles = makeStyles({
 
 
 
-const Warrior:FC = ()=>{
+const Nike:FC = ()=>{
 
     const classes = useStyles()
 
@@ -37,14 +37,17 @@ const Warrior:FC = ()=>{
          <Card className={classes.card}>
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/Warrior.jpg"
+                                                image="/images/Nike.jpg"
                                               />
                                               <CardContent>
                                                 <Typography className={classes.h1} gutterBottom variant="h5" component="h1">
-                                                    WARRIOR
+                                                    NIKE
                                                 </Typography>
                                                 <Typography className={classes.p} variant="body2" color="textSecondary" component="p">
-                                                 革新的で高性能な道具。あらゆる年齢、人々に合うラクロスとホッケー選手のためのアパレルの業界最高のメーカー
+                                                 ナイキは、アメリカ合衆国・オレゴン州に本社を置くスニーカーやスポーツウェアなどスポーツ関連商品を扱う多国籍企業。設立は1968年、ニューヨーク証券取引所に上場。
+                                                 社名の由来は、同社社員のジェフ・ジョンソンが夢で見たギリシャ神話の勝利の女神「ニーケー (Nike)」から。
+                                                 スウッシュ(Swoosh) は、1971年に商標登録されたナイキのロゴマークである。
+                                                 ロゴマークは、勝利の女神であるニーケーの彫像の翼をモチーフにデザインしたとされている。また「勢いよく動く」という意味である。
                                                 </Typography>
                                               </CardContent>
                                         
@@ -52,4 +55,4 @@ const Warrior:FC = ()=>{
     )
 }
 
-export default Warrior;
+export default Nike;

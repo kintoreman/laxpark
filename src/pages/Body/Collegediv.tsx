@@ -46,7 +46,7 @@ const Collegediv:FC = ()=>{
 
     return(
         <div className={classes.div}>
-            <h1 className={classes.h1} ><AccessibilityIcon />関東大学一覧</h1>
+            <h1 className={classes.h1} ><AccessibilityIcon />関東学生ラクロス</h1>
                     <div className={classes.div2}>
                         <Card className={classes.card}>
                                             <CardActionArea style={{height: "100%"}}　 href="./1bu" >{/*CardActionAreaはonclick的な役割*/ }

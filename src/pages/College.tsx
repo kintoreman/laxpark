@@ -1,275 +1,113 @@
 import {FC, useState} from "react";
 import { makeStyles } from "@material-ui/core";
-import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Typography from '@material-ui/core/Typography';
+
 
 
 const useStyles = makeStyles({
-    div: {
-        background :"#f9f5ec",
-        height: "1500px",
-        width: "100%",
-        paddingTop: "4%",
-        paddingLeft: "8%",
-    },
-    h1:{
-        fontSize:"1.2em",
-        padding: "0.5em",
-        paddingLeft: "7em",
-        color: "#594512",
-    },
-    div2: {
-        height: "50vh",
-        display: "flex",
-        width: "85%",
-        flexWrap: "wrap",//親要素の幅を越えた時点で改行される。
-        paddingTop: "1%",
-        justifyContent: "center",
-    },
-    h2: {
-      width: "0.3em",
-      borderRadius: "15px",
-      paddingLeft: "0.8rem",
-      
-    },
-    card: {
-        height: "100%",
-        width: "20vw",
-        borderRadius: "20px",
-        marginLeft: "1em",
-        marginBottom: "1em",
-        transition : " 0.5s ",
-        "&:hover": {
-          width: "20.5vw",
-          height: "103%",
-          marginLeft: "0.5em",
-          marginBottom: "0.5em",
-          
+  back:{
+    height:"1000px",
+    background: "linear-gradient(110deg, #FFFF66 20%, #009efd 100%);"
+  },
+  back2:{
+    height:"1000px",
+    background: "linear-gradient(-86deg,  #009efd 5%, #FFFF66 105%);"
+  },
+  div:{
+    marginTop: "5em",
+    opacity:0,
+    "&:hover":{
+        opacity: 1,
+        display:"flex",
+        transition: "all 5s",
         },
-    },
-    img: {
-        width:"100%",
-        height: "50%",
-    },
+  },
+   h1:{
+     backgroundColor:"yellow",
+   },
+   title:{
+     width:"fit-content",
+     color: "white",
+     margin: 0,
+     paddingTop: "1.5em",
+     paddingLeft: "2em",
+     fontSize: "2.5em",
+     fontFamily: "serif",
+     fontWeight: "bold",
+     transition: "all 1s ease-out",
+     "&:hover":{
+            fontSize : "3em",
+            color : "blue",
+        },
+   },
+   word:{
+     width:"53vw",
+     color: "white",
+     margin: 0,
+     paddingTop: "2em",
+     paddingLeft: "15em",
+     fontSize: "1.5em",
+     fontFamily: "serif",
+     transition: "all 1s ease-out",
+     "&:hover":{
+            color : "red",
+        },
+   },
+   irekae:{
+     width:"735px",
+     height: "350px",
+     transition: "all 3s",
+     marginLeft: "30em",
+     borderRadius: "10px",
+     opacity: 0,
+     "&:hover":{
+           marginLeft: 0,
+           opacity: 0.8
+        },
+   },
+   menslax:{
+     width: "fit-content",
+      margin: "0 auto",
+      alignSelf: "center",
+      fontSize : "1.5em",
+      color: "white",
+      borderRadius: "5px",
+      background: "rgba(255,0,255,0.6)"
+      
+   },
+   aogaku:{
+     width:"735px",
+     height: "350px",
+     transition: "all 3s ",
+     marginTop: "3em",
+     borderRadius: "10px",
+     opacity: 0,
+     "&:hover":{
+           marginLeft: "30em",
+           opacity: 0.8
+        },
+   }
 });
 
 
 const College:FC = ()=>{
-    const classes = useStyles();
-
+　const classes = useStyles()  
     return(
-    <>    
-        <div className={classes.div}>
-            <h1 className={classes.h1} ><EmojiPeopleIcon />関東大学一覧</h1>
-                    <div className={classes.div2}>
-                        
-                                       <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./waseda" >{/*CardActionAreaはonclick的な役割*/ }
-                                              <CardMedia
-                                                className={classes.img}
-                                                image=""
-                                              />
-                                              <CardContent>
-                                                <Typography className={classes.h2} gutterBottom variant="h5" component="h2">
-                                                    Waseda 
-                                                </Typography>
-                                                <Typography variant="body2" color="textSecondary" component="p">
-                                                 Red buts
-                                                </Typography>
-                                              </CardContent>
-                                            </CardActionArea> 
-                                        </Card>
-                                        <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./warrior" >{/*CardActionAreaはonclick的な役割*/ }
-                                              <CardMedia
-                                                className={classes.img}
-                                                image=""
-                                              />
-                                              <CardContent>
-                                                <Typography gutterBottom variant="h5" component="h2">
-                                                  KO
-                                                </Typography>
-                                                <Typography variant="body2" color="textSecondary" component="p">
-                                                 日吉いいな
-                                                </Typography>
-                                              </CardContent>
-                                            </CardActionArea> 
-                                        </Card>
-                                        
-                                         <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
-                                              <CardMedia
-                                                className={classes.img}
-                                                image=""
-                                              />
-                                              <CardContent>
-                                                <Typography gutterBottom variant="h5" component="h2">
-                                                  DOKKYO
-                                                </Typography>
-                                                <Typography variant="body2" color="textSecondary" component="p">
-                                                  成功はハードワークなしでは来ないという考え方です。
-                                                </Typography>
-                                              </CardContent>
-                                            </CardActionArea> 
-                                        </Card>
-                           
+    <>
+       <div className={classes.back}>
+          <p　className= {classes.title}>関東学生ラクロス</p>
+          <p className= {classes.word}>日本の学生ラクロスで、一番レベルが高いと称されている。1部2部3部の入れ替えが激しく、毎年見どころである。</p>
+              <div className={classes.div}> 
+                <img className={classes.irekae} src="images/irekae.jpg" />
+                    <p className= {classes.menslax}>男子ラクロス</p>
+              </div>  
+          <img className={classes.aogaku} src="images/aogaku.jpg" />
 
-                                         <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
-                                              <CardMedia
-                                                className={classes.img}
-                                                image=""
-                                                />
-                                              <CardContent>
-                                                <Typography gutterBottom variant="h5" component="h2">
-                                                  CHUO
-                                                </Typography>
-                                                <Typography variant="body2" color="textSecondary" component="p">
-                                                  Banditsu
-                                                </Typography>
-                                              </CardContent>
-                                            </CardActionArea> 
-                                        </Card>
-                                         <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
-                                              <CardMedia
-                                                className={classes.img}
-                                                image=""
-                                                />
-                                              <CardContent>
-                                                <Typography gutterBottom variant="h5" component="h2">
-                                                  TOKYO
-                                                </Typography>
-                                                <Typography variant="body2" color="textSecondary" component="p">
-                                                  nihon1
-                                                </Typography>
-                                              </CardContent>
-                                            </CardActionArea> 
-                                        </Card>
-                                         <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
-                                              <CardMedia
-                                                className={classes.img}
-                                                image=""
-                                                />
-                                              <CardContent>
-                                                <Typography gutterBottom variant="h5" component="h2">
-                                                  RIKKYO
-                                                </Typography>
-                                                <Typography variant="body2" color="textSecondary" component="p">
-                                                  Setten
-                                                </Typography>
-                                              </CardContent>
-                                            </CardActionArea> 
-                                        </Card>
-                                   
-                              
+       </div>
+       <div className={classes.back2}>
 
-                                         <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
-                                              <CardMedia
-                                                className={classes.img}
-                                                image=""
-                                                />
-                                              <CardContent>
-                                                <Typography gutterBottom variant="h5" component="h2">
-                                                  MUSASHI
-                                                </Typography>
-                                                <Typography variant="body2" color="textSecondary" component="p">
-                                                 Family
-                                                </Typography>
-                                              </CardContent>
-                                            </CardActionArea> 
-                                        </Card>
-                                         <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
-                                              <CardMedia
-                                                className={classes.img}
-                                                image=""
-                                                />
-                                              <CardContent>
-                                                <Typography gutterBottom variant="h5" component="h2">
-                                                  MEIJI
-                                                </Typography>
-                                                <Typography variant="body2" color="textSecondary" component="p">
-                                                  chocolate
-                                                </Typography>
-                                              </CardContent>
-                                            </CardActionArea> 
-                                        </Card>
-                                         <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
-                                              <CardMedia
-                                                className={classes.img}
-                                                image=""
-                                                />
-                                              <CardContent>
-                                                <Typography gutterBottom variant="h5" component="h2">
-                                                  HITOTSUBASHI
-                                                </Typography>
-                                                <Typography variant="body2" color="textSecondary" component="p">
-                                                  We are daijya
-                                                </Typography>
-                                              </CardContent>
-                                            </CardActionArea> 
-                                        </Card>
-                                        <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
-                                              <CardMedia
-                                                className={classes.img}
-                                                image=""
-                                                />
-                                              <CardContent>
-                                                <Typography gutterBottom variant="h5" component="h2">
-                                                  GAKUSHUIN
-                                                </Typography>
-                                                <Typography variant="body2" color="textSecondary" component="p">
-                                                  fenics
-                                                </Typography>
-                                              </CardContent>
-                                            </CardActionArea> 
-                                        </Card>
-                                        <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
-                                              <CardMedia
-                                                className={classes.img}
-                                                image=""
-                                                />
-                                              <CardContent>
-                                                <Typography gutterBottom variant="h5" component="h2">
-                                                  MEIJIGAKUIN
-                                                </Typography>
-                                                <Typography variant="body2" color="textSecondary" component="p">
-                                                  Hepbands
-                                                </Typography>
-                                              </CardContent>
-                                            </CardActionArea> 
-                                        </Card>
-                                        <Card className={classes.card}>
-                                            <CardActionArea style={{height: "100%"}}　 href="./eastcoast" >{/*CardActionAreaはonclick的な役割*/ }
-                                              <CardMedia
-                                                className={classes.img}
-                                                image=""
-                                                />
-                                              <CardContent>
-                                                <Typography gutterBottom variant="h5" component="h2">
-                                                  NITTAI
-                                                </Typography>
-                                                <Typography variant="body2" color="textSecondary" component="p">
-                                                  All Blue
-                                                </Typography>
-                                              </CardContent>
-                                            </CardActionArea> 
-                                        </Card>
-                                   
-                                </div>
-                       
-            </div>
-        </>
+       </div>
+    　<h1 className={classes.h1}>関東学生ラクロスリーグ</h1>    
+    </>
     )
 
 }

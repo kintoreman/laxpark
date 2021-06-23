@@ -63,7 +63,7 @@ const Searchdiv: FC<Props> = ({addText})=>{
              <div className={classes.div2}>
                 <SupervisedUserCircleIcon style={{color:"darkorchid", fontSize:"6.0em"}} />
                 <h1 className={classes.h1}>Lacrosse Park</h1>
-                <p className={classes.p}>-ラクロス道具情報サイトラクロスパーク-</p>
+                <p className={classes.p}>-ラクロス情報を提供するラクロスパーク-</p>
                 <form className={classes.form} onSubmit={handleSubmit} >
                             <input className={classes.input}　placeholder={"ラクロス道具を検索"}
                             value={text} 

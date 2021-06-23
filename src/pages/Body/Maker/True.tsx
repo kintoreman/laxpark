@@ -29,7 +29,7 @@ const useStyles = makeStyles({
 
 
 
-const Warrior:FC = ()=>{
+const True:FC = ()=>{
 
     const classes = useStyles()
 
@@ -37,14 +37,17 @@ const Warrior:FC = ()=>{
          <Card className={classes.card}>
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/Warrior.jpg"
+                                                image="/images/true.jpg"
                                               />
                                               <CardContent>
                                                 <Typography className={classes.h1} gutterBottom variant="h5" component="h1">
-                                                    WARRIOR
+                                                    TRUE
                                                 </Typography>
                                                 <Typography className={classes.p} variant="body2" color="textSecondary" component="p">
-                                                 革新的で高性能な道具。あらゆる年齢、人々に合うラクロスとホッケー選手のためのアパレルの業界最高のメーカー
+                                                  ‎100年以上にわたり、私たちはパフォーマンスを向上させるスポーツ製品を革新してきました。
+                                                  私たちは、研究、時間、投資を私たちのアイデアに入れました。
+                                                  私たちのデザインに血、汗、涙。早朝と深夜は、アスリートがTURE製品で感じる感覚を完成させる。
+                                                　私たちは商品が十分ではないことを知っているので、完ぺきを生み出すのは本当に大変と知っているのです。‎
                                                 </Typography>
                                               </CardContent>
                                         
@@ -52,4 +55,4 @@ const Warrior:FC = ()=>{
     )
 }
 
-export default Warrior;
+export default True;

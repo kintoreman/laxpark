@@ -28,8 +28,6 @@ const useStyles = makeStyles({
     h2: {
       width: "0.3em",
       borderRadius: "15px",
-      paddingLeft: "0.8rem",
-      background: "linear-gradient(135deg, #ffd600 0%, #ffa800 100%)",
     },
     card: {
         height: "100%",

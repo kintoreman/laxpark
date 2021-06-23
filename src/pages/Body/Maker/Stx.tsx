@@ -29,7 +29,7 @@ const useStyles = makeStyles({
 
 
 
-const Warrior:FC = ()=>{
+const Stx:FC = ()=>{
 
     const classes = useStyles()
 
@@ -37,14 +37,17 @@ const Warrior:FC = ()=>{
          <Card className={classes.card}>
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/Warrior.jpg"
+                                                image="/images/stx.jpg"
                                               />
                                               <CardContent>
                                                 <Typography className={classes.h1} gutterBottom variant="h5" component="h1">
-                                                    WARRIOR
+                                                    STX
                                                 </Typography>
                                                 <Typography className={classes.p} variant="body2" color="textSecondary" component="p">
-                                                 革新的で高性能な道具。あらゆる年齢、人々に合うラクロスとホッケー選手のためのアパレルの業界最高のメーカー
+                                                  STXは、メリーランド州ボルチモアに拠点を置く世界的なスポーツ用品メーカーです。
+                                                  Wm. T. バーネットのCO.STXの子会社で、ラクロス機器、フィールドホッケー機器、アイスホッケー用品を製造していますが、
+                                                  主な事業はグローブ、防具、女性用アイウェアを含む男女のラクロススティックと保護具の製造にあります。
+                                                  同社は1970年にSTX Inc.STX社の最初のスティックとしてリチャード・B.Cタッカーによって設立されました。
                                                 </Typography>
                                               </CardContent>
                                         
@@ -52,4 +55,4 @@ const Warrior:FC = ()=>{
     )
 }
 
-export default Warrior;
+export default Stx;

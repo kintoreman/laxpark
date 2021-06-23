@@ -11,7 +11,7 @@ const useStyles = makeStyles({
         height: "1000px",
         margin: "auto",
         paddingTop: "5%",
-        backgroundColor: "aliceblue",
+        backgroundColor: "rgba(200,200,250,0.2)",
     },
     img: {
         height: "25%",
@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     },
     h1: {
         fontSize: "3em",
-        color: "red",
+        color: "darkslategrey",
     },
     p:{
         fontSize: "1.2em",

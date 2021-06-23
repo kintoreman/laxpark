@@ -29,7 +29,7 @@ const useStyles = makeStyles({
 
 
 
-const Warrior:FC = ()=>{
+const Maverik:FC = ()=>{
 
     const classes = useStyles()
 
@@ -37,14 +37,17 @@ const Warrior:FC = ()=>{
          <Card className={classes.card}>
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/Warrior.jpg"
+                                                image="/images/maverik.jpg"
                                               />
                                               <CardContent>
                                                 <Typography className={classes.h1} gutterBottom variant="h5" component="h1">
-                                                    WARRIOR
+                                                    Brine
                                                 </Typography>
                                                 <Typography className={classes.p} variant="body2" color="textSecondary" component="p">
-                                                 革新的で高性能な道具。あらゆる年齢、人々に合うラクロスとホッケー選手のためのアパレルの業界最高のメーカー
+                                                  ‎エクセターに拠点を置き、2005年に全米プロのラクロスプレーヤーによって設立された。
+                                                  Maverikは、ヘッド、シャフト、完全なスティック、保護具の完全なライン、アクセサリーの主要なラクロスメーカーです。
+                                                  クラス最高のデザインチームとゲームのトッププレーヤーからのインプットを持つMaverik Lacrosseは、市場をリードする製品を作成、テスト、開発し、あらゆるレベルのアスリートが最高のプレーをすることができます。
+                                                  NCAA全体の製品のリーディングプロバイダーとして、Maverikは「プレイヤーによって動力を与えられている」と誇りに思っています
                                                 </Typography>
                                               </CardContent>
                                         
@@ -52,4 +55,4 @@ const Warrior:FC = ()=>{
     )
 }
 
-export default Warrior;
+export default Maverik;

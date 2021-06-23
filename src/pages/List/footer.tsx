@@ -54,7 +54,7 @@ const Footer:FC = ()=>{
                 <ul className={classes.ul}>
                     <p>menu  -------------------------------</p>
                     <li className={classes.list}><a href="./maker" > メーカー一覧 </a></li>
-                    <li className={classes.list}><a href="./stick" >関東大学一覧</a></li>
+                    <li className={classes.list}><a href="./stick" >関東学生ラクロス</a></li>
                     <li className={classes.list}><a href="./popular" >有名人一覧</a></li>
                     <li className={classes.list}><a href="./country" >主要国一覧</a></li>
                 </ul>

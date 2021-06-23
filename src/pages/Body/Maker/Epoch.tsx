@@ -29,7 +29,7 @@ const useStyles = makeStyles({
 
 
 
-const Warrior:FC = ()=>{
+const Epoch:FC = ()=>{
 
     const classes = useStyles()
 
@@ -37,14 +37,15 @@ const Warrior:FC = ()=>{
          <Card className={classes.card}>
                                               <CardMedia
                                                 className={classes.img}
-                                                image="/images/Warrior.jpg"
+                                                image="/images/epoch.jpg"
                                               />
                                               <CardContent>
                                                 <Typography className={classes.h1} gutterBottom variant="h5" component="h1">
-                                                    WARRIOR
+                                                    EPOCH
                                                 </Typography>
                                                 <Typography className={classes.p} variant="body2" color="textSecondary" component="p">
-                                                 革新的で高性能な道具。あらゆる年齢、人々に合うラクロスとホッケー選手のためのアパレルの業界最高のメーカー
+                                                  ‎エポックは、世界クラスの材料と技術を利用して、パフォーマンスを高め、性能を最大化するように設計された最高級の製造されたラクロス道具を提供します。
+                                                  すべてのエポックラクロスシャフトは、利用可能な最高峰なグレードの材料から作られています。
                                                 </Typography>
                                               </CardContent>
                                         
@@ -52,4 +53,4 @@ const Warrior:FC = ()=>{
     )
 }
 
-export default Warrior;
+export default Epoch;
